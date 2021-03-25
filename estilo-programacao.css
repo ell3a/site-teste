@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
+
 
 * {
     margin: 0 auto;
@@ -56,6 +58,15 @@
     top: 130px;
     left: 200px;
     font-size: 100px;
+    color:  rgb(37, 37, 39);    
+}
+
+.nome-site h2{
+    position: absolute;    
+    top: 230px;
+    left: 350px;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 40px;
     color:  rgb(37, 37, 39);    
 }
 
