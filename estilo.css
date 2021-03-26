@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
 
 * {
     margin: 0 auto;
@@ -30,44 +32,278 @@
 }
 
 #menu-h ul li a:hover {
-    background-color: #E4E4E4; 
+    background-color:#FCFBFC; 
     color: rgb(37, 37, 39);
 }
 
 #menu-h ul li:last-child a {
     float: right;
-    color:  #E4E4E4;
-    background-color: rgb(37, 37, 39);
+    color:  #FCFBFC;
+    background-color:#3D7AB7;
 }
 
 .nome-site {
     margin: 0px;
     bottom: 0px;
-    height: 300px;
+    height: 400px;
     width: 100%;
     background-image: url('img-topo.jpg');
     background-size: 100%; 
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .nome-site h1{
     position: absolute;    
-    top: 130px;
-    left: 200px;
+    top: 100px;
+    left: 80px;
     font-size: 100px;
-    color:  rgb(37, 37, 39);    
+    color:  rgb(37, 37, 39); 
 }
 
-.rodape {
+.entre-div {
+    margin: 0px;
+    bottom: 0px;
+    height: 200px;
+    width: 100%;
+    background-image: url('img-topo.jpg');
+    background-size: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.entre-div h1{
+    position: relative;    
+    top: 60px;
+    text-align: center;
+    font-size: 60px;
+    color:  rgb(37, 37, 39);
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #FCFBFC; 
+}
+
+
+.frase {
     margin: 0px;
     bottom: 0px;
     height: 300px;
     width: 100%;
-    background-color: #E4E4E4;
-    font-size: 50px;
+    background-color: #FCFBFC;
+}
+
+.frase h1{
+    position: relative;    
+    top: 75px;
+    font-family: 'Caveat', cursive;
+    font-size: 40px;
+    font-weight: 120;
+    text-align: center;
+    color:  rgb(61, 122, 183); 
+}
+
+.frase h2{
+    position: relative;    
+    top: 80px;
+    font-size: 20px;
+    font-weight: 80;
+    text-align: center;
+    color:  rgb(37, 37, 39); 
+}
+
+.div-abertura {
+    position: relative;
+    padding: -20px;
+    bottom: -50px; 
+    padding: 0;
+    margin: 0px;
+    bottom: -10px;
+    height: 400px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    display: inline-block;
+    font-size: -10px;
+}
+
+.div-abertura h1{
+    position: relative;
+    margin: 0;   
+    top: -10px;
+    height: 40px;
+    font-size: 40px;
+    color:  rgb(61, 122, 183);
+    text-align: center;
+}
+
+#abertura-esquerda {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    border-width:0;
+    width: 50%;
+    height: 400px;
+    left:0px;
+    background-image: linear-gradient(rgba(255, 255, 255, 1.2), rgba(255, 255, 255, 0.5)), url('img-index-math.jpg');
+    background-size: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: lighten;
+    float: left;
+}
+
+#abertura-direita {
+    position:relative;
+    margin: 0;
+    border-width:0;
+    width: 50%;
+    height: 400px;
+    background-image: linear-gradient(rgba(255, 255, 255, 1.2), rgba(255, 255, 255, 0.5)), url('img-index-prog.jpg');
+    background-size: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    float: left;
+}
+
+.locais {
+    margin: 0px;
+    bottom: 0px;
+    height: 600px;
+    width: 100%;
+    background-image: linear-gradient(rgba(255, 255, 255, 1.2), rgba(255, 255, 255, 0.8)), url('img-locais.svg');
+    background-size: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;    
+}
+
+#esquerda-locais {
+    position: relative;
+    top: 10px;
+    margin: 0;
+    border-width:0;
+    width: 33.3%;
+    height: 535px;
+    left:0px;
+    float: left;
+    border: 1px solid;
+    border-color: rgb(61, 122, 183);
+    border: solid 1px ;
+    border-color: rgb(61, 122, 183);
+}
+
+#centro-locais {
+    position:relative;
+    top: 10px;
+    margin: 0;
+    border-width:0;
+    width: 33.3%;
+    height: 535px;
+    float: left;
+    border: solid 1px ;
+    border-color: rgb(61, 122, 183);
+}
+
+#direita-locais {
+    position:relative;
+    top: 10px;
+    margin: 0;
+    border-width:0;
+    width: 33.3%;
+    height: 535px;
+    float: left;
+    border: solid 1px;
+    border-color: rgb(61, 122, 183);
+}
+
+.locais h1{
+    position: relative;    
+    top: 0px;
+    font-size: 40px;
+    text-align: center;
+    color:  rgb(61, 122, 183);
+     
+}
+
+.locais h2{
+    position: relative; 
+    top: 5px;
+    font-size: 20px;
+    font-weight: 80;
+    text-align: center;
+    color:  rgb(37, 37, 39);  
+}
+
+.locais h3{
+    position: relative;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;  
+    top: 20px;
+    font-size: 25px;
+    text-align: left;
+    color:  rgb(61, 122, 183);
+}
+
+.locais p {
+    position: relative;
+    padding-left: 15px;
+    padding-right: 15px; 
+    top: 20px;
+    font-size: 15px;
+    text-align: justify;
     color:  rgb(37, 37, 39);
-    text-indent: 150px;   
+}
+
+.rodape {
+    position: relative; 
+    margin: 0px;
+    bottom: 0px;
+    height: 200px;
+    width: 100%;
+    background-color: rgb(61, 122, 183);
+    color: #E4E4E4; 
+}
+
+#rodape {
+    position: relative;
+    padding: 10px;
+    margin: 0;
+    border-width:0;
+    width: 25%;
+    height: 200px;
+    left:0px;
+    float: left;
+}
+
+.rodape img{
+    height: 75px;
+}
+
+.rodape h1{    
+    font-size: 18px;
+}
+
+.rodape h2{
+    font-size: 50px;
+    text-align: center;
+}
+
+.rodape h3{
+    font-size: 15px;
+    padding: 15px;
+    text-align: center;
+}
+
+a[href="#top"]{
+    padding:50px;
+    position:fixed;
+    top: 90%;
+    right:40px;
+    display:none;
+    font-size: 30px;
+}
+a[href="#top"]:hover{
+    text-decoration:none;
 }
 
 .footer {
