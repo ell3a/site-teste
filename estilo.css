@@ -300,6 +300,10 @@ a:hover {
     width: 350px;
 }
 
+.conteudo #ir-pagina a {
+    color: rgb(255, 255, 255);;
+}
+
 .conteudo #ir-pagina a:visited {
     color: rgb(255, 255, 255);;
 }
@@ -378,8 +382,12 @@ a:hover {
     font-size: 19px;
 }
 
+.rodape a {
+    color: rgb(255, 255, 255);
+}
+
 .rodape a:visited {
-    color: rgb(255, 255, 255);;
+    color: rgb(255, 255, 255);
 }
 
 .rodape a:link {
@@ -397,6 +405,7 @@ a:hover {
 .rodape #delta{    
     font-size: 80px;
     text-align: center;
+    padding: 0px;
 }
 
 .rodape h1{
