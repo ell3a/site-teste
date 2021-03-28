@@ -254,6 +254,52 @@
     color:  rgb(37, 37, 39);
 }
 
+.conteudo {
+    margin: 0px;
+    bottom: 0px;
+    height: 800px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    color:  rgb(37, 37, 39); 
+    text-align: justify;
+    font-size: 18px;   
+}
+
+.conteudo h1 {
+    top: 0px;
+    font-size: 40pt;
+    color:  rgb(61, 122, 183);
+    text-align: center;
+}
+
+.conteudo p{
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-bottom: 10px;
+}
+
+.conteudo #html {
+    margin: 0px;
+    bottom: 0px;
+    height: 800px;
+    width: 100%;
+    background-image: linear-gradient(rgba(255, 255, 255, 1.2), rgba(255, 255, 255, 0.8)), url('img-index-html.png');
+    background-size: 100%; 
+    background-position: center;
+    background-repeat: no-repeat; 
+}
+
+.conteudo #programacao {
+    margin: 0px;
+    bottom: 0px;
+    height: 800px;
+    width: 100%;
+    background-image: linear-gradient(rgba(255, 255, 255, 1.2), rgba(255, 255, 255, 0.8)), url('img-index-programacao.png');
+    background-size: 100%; 
+    background-position: center;
+    background-repeat: no-repeat; 
+}
+
 .rodape {
     position: relative; 
     margin: 0px;
