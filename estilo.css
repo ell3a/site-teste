@@ -257,7 +257,7 @@
 .conteudo {
     margin: 0px;
     bottom: 0px;
-    height: 800px;
+    height: 900px;
     width: 100%;
     background-color: rgb(255, 255, 255);
     color:  rgb(37, 37, 39); 
@@ -266,7 +266,7 @@
 }
 
 .conteudo h1 {
-    top: 0px;
+    top: 10px;
     font-size: 40pt;
     color:  rgb(61, 122, 183);
     text-align: center;
@@ -275,7 +275,25 @@
 .conteudo p{
     padding-left: 200px;
     padding-right: 200px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.conteudo #link{
+    font-size: 25px;
+    text-align: center;
+    color:  rgb(61, 122, 183);
+}
+
+.conteudo #link img {
+    padding: 30px;
+}
+
+.conteudo #latex {
+    margin: 0px;
+    bottom: 0px;
+    height: 900px;
+    width: 100%;
 }
 
 .conteudo #html {

@@ -124,15 +124,30 @@
     </div>
 
     <div class="conteudo">
-        <h1>Latex</h1>
-        
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem assumenda error minus quasi odio alias cupiditate quam aut maxime, dolor eius. Voluptatem tenetur, optio et ad sapiente reprehenderit vitae molestiae? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit facilis delectus, doloribus temporibus fugiat non quos iure mollitia corrupti aperiam vero beatae ducimus numquam modi voluptas? Minima mollitia fugiat ad.
-        </p>
-        
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium architecto quaerat repudiandae unde provident eveniet cupiditate, pariatur, reiciendis consectetur necessitatibus et deleniti vero animi sequi quia, labore rerum sapiente maiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis ipsum ad numquam recusandae at? Ullam, tempore explicabo. Enim, perferendis rem architecto ad, iusto dolorum voluptates exercitationem, alias mollitia excepturi a.
-        </p>        
+        <div id="latex">
+            <h1>$\LaTeX$</h1>    
+            <p>
+                O latex ($\LaTeX$) é um conjunto de macros criado em 1983 por <a href="https://pt.wikipedia.org/wiki/Leslie_Lamport" target="_blank">Leslie Lamporth</a> para facilitar o uso da linguagem $\TeX$. Tex é uma linguagem que foi criada pelo cientista da computação <a href="https://pt.wikipedia.org/wiki/Donald_Knuth" target="_blank">Donald E. Knuth</a> no final da década de 1970, para edição e diagramação de textos científicos em alta qualidade. Ao usar latex, o escritor usa texto simples, ao invés do texto formatado encontrado em processadores de texto como o Microsoft Word ou LibreOffice Writer, usando um conjunto de marcadores, como o HTML, para definir a estrutura geral do documento e sua formatação.
+            </p>        
+            <p>
+                Uso do latex pode se dá a a partir de editores online como:
+            </p>
+            <p id="link">            
+                <a href="https://pt.overleaf.com/" target="_blank"><img src="img-logo-overleaf.png" alt="ícone Overleaf"></a> 
+                <a href="https://cocalc.com/doc/latex-editor.html" target="_blank"><img src="img-logo-cocalc.png" alt="ícone CoCalc"></a>  
+            </p>   
+            <p>
+                ou a partir de uma distribuição instalada no computador, como 
+            </p>
+            <p id="link">            
+                <a href="https://www.tug.org/texlive/" target="_blank"><img src="./imagens/fundo.png" alt="ícone TexLive"></a> 
+                <a href="https://miktex.org/" target="_blank"><img src="./imagens/img-logo-miktex.png" alt="ícone MikTex"></a>  
+            </p>
+            <p>
+                Aqui no site, há o $\delta \LaTeX$, local dedicado ao estudo de Latex. Com indicação de referência, tutoriais de instalação e uso em editores remotos e locais, bem como modelos de algun de arquivos usados por mim, como avaliações, listas de exercícios e arquivos.
+            </p>   
+        </div>        
+         
     </div>
 
 
@@ -174,6 +189,22 @@
     <div class="footer">
         &copy; 2021 - Leandro Vieira
     </div>
-        
+    
+    <!-- Início do código Latex -->
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?' type='text/javascript'>   
+        MathJax.Hub.Config({
+            HTML: ["input/TeX","output/HTML-CSS"],
+            TeX: { extensions: ["AMSmath.js","AMSsymbols.js"],
+                   equationNumbers: { autoNumber: "AMS" } },
+            extensions: ["tex2jax.js"],
+            jax: ["input/TeX","output/HTML-CSS"],
+            tex2jax: { inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+                       displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+                       processEscapes: true },
+            "HTML-CSS": { availableFonts: ["TeX"],
+                          linebreaks: { automatic: true } }
+        });
+        </script>
+    <!-- Fim do código Latex -->    
 </body>
 </html>
