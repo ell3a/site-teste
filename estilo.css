@@ -9,6 +9,14 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+a:link {
+    text-decoration: none;
+}
+   
+a:hover {
+    text-decoration: underline;
+}
+
 #menu-h{
     background-color: rgb(37, 37, 39);
 }
@@ -220,8 +228,7 @@
     top: 0px;
     font-size: 40px;
     text-align: center;
-    color:  rgb(61, 122, 183);
-     
+    color:  rgb(61, 122, 183);     
 }
 
 .locais h2{
@@ -284,9 +291,30 @@
     text-align: center;
     color:  rgb(61, 122, 183);
 }
+.conteudo #ir-pagina{
+    font-size: 50px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color: rgb(61, 122, 183);
+    height: 75px;
+    width: 350px;
+}
+
+.conteudo #ir-pagina a:visited {
+    color: rgb(255, 255, 255);;
+}
 
 .conteudo #link img {
-    padding: 30px;
+    padding-left: 30;
+    padding-right: 30px;
+}
+
+.conteudo a:link {
+    text-decoration: none;
+}
+   
+.conteudo a:hover {
+    text-decoration: underline;
 }
 
 .conteudo #latex {
@@ -322,7 +350,7 @@
     position: relative; 
     margin: 0px;
     bottom: 0px;
-    height: 200px;
+    height: 270px;
     width: 100%;
     background-color: rgb(61, 122, 183);
     color: #E4E4E4; 
@@ -330,21 +358,51 @@
 
 #rodape {
     position: relative;
-    padding: 10px;
+    padding: 20px;
     margin: 0;
     border-width:0;
-    width: 25%;
-    height: 200px;
+    width: 20%;
+    height: 250px;
     left:0px;
     float: left;
+}
+
+.rodape #link img {
+    padding-left: 30;
+    padding-right: 30px;
+}
+.rodape ul{
+    list-style:none;
+    padding-left: 0px;
+    padding-bottom: 10px;
+    font-size: 19px;
+}
+
+.rodape a:visited {
+    color: rgb(255, 255, 255);;
+}
+
+.rodape a:link {
+    text-decoration: none;
+}
+   
+.rodape a:hover {
+    text-decoration: underline;
 }
 
 .rodape img{
     height: 75px;
 }
 
-.rodape h1{    
-    font-size: 18px;
+.rodape #delta{    
+    font-size: 80px;
+    text-align: center;
+}
+
+.rodape h1{
+    font-size: 28px;
+    text-align: left;
+    padding-left: 0px;
 }
 
 .rodape h2{
