@@ -264,7 +264,7 @@ a:hover {
 .conteudo {
     margin: 0px;
     bottom: 0px;
-    height: 800px;
+    height: 900px;
     width: 100%;
     background-color: rgb(255, 255, 255);
     color:  rgb(37, 37, 39); 
@@ -273,7 +273,7 @@ a:hover {
 }
 
 .conteudo h1 {
-    top: 0px;
+    top: 10px;
     font-size: 40pt;
     color:  rgb(61, 122, 183);
     text-align: center;
@@ -282,7 +282,6 @@ a:hover {
 .conteudo p{
     padding-left: 200px;
     padding-right: 200px;
-<<<<<<< HEAD
     padding-bottom: 20px;
     padding-top: 20px;
 }
@@ -327,9 +326,6 @@ a:hover {
     bottom: 0px;
     height: 900px;
     width: 100%;
-=======
-    padding-bottom: 10px;
->>>>>>> parent of 5a10464 (Atualizações gerais no index.html)
 }
 
 .conteudo #html {
@@ -413,7 +409,7 @@ a:hover {
 }
 
 .rodape h1{
-    font-size: 25px;
+    font-size: 28px;
     text-align: left;
     padding-left: 0px;
 }
@@ -424,7 +420,7 @@ a:hover {
 }
 
 .rodape h3{
-    font-size: 13px;
+    font-size: 15px;
     padding: 15px;
     text-align: center;
 }
