@@ -1,12 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
 
 * {
-    margin: 0 auto;
-    padding: -10px;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
+}
+
+main {
+    margin: 0px;
+    bottom: 0px;
+    width: 100%;
+    background-color: #FCFBFC;
 }
 
 a:link {
@@ -17,45 +24,12 @@ a:hover {
     text-decoration: underline;
 }
 
-#menu-h{
-    background-color: rgb(37, 37, 39);
-}
-
-#menu-h ul {
-    max-width: 800px;
-    list-style: none;
-    padding: 0;
-}
-
-#menu-h ul li {
-    display: inline;
-}
-
-#menu-h ul li a {
-    color: #FFF;
-    padding: 20px;
-    display: inline-block;
-    text-decoration: none;
-    transition: background .4s;
-}
-
-#menu-h ul li a:hover {
-    background-color:#FCFBFC; 
-    color: rgb(37, 37, 39);
-}
-
-#menu-h ul li:last-child a {
-    float: right;
-    color:  #FCFBFC;
-    background-color:#3D7AB7;
-}
-
 .nome-site {
     margin: 0px;
     bottom: 0px;
     height: 400px;
     width: 100%;
-    background-image: url('img-topo.jpg');
+    background-image: url('./imagens/topo.jpg');
     background-size: 100%; 
     background-position: center;
     background-repeat: no-repeat;
@@ -68,6 +42,14 @@ a:hover {
     left: 80px;
     font-size: 100px;
     color:  rgb(37, 37, 39); 
+}
+
+.nome-site h2{
+    position: absolute;    
+    top: 200px;
+    left: 200px;
+    font-size: 50px;
+    color: rgb(61, 122, 183); 
 }
 
 .entre-div {
@@ -91,7 +73,6 @@ a:hover {
     -webkit-text-stroke-width: 3px;
     -webkit-text-stroke-color: #FCFBFC; 
 }
-
 
 .frase {
     margin: 0px;
@@ -120,58 +101,91 @@ a:hover {
     color:  rgb(37, 37, 39); 
 }
 
-.div-abertura {
-    position: relative;
-    padding: -20px;
-    bottom: -50px; 
-    padding: 0;
-    margin: 0px;
-    bottom: -10px;
-    height: 400px;
+.historico {
+    height: 1420px;
     width: 100%;
-    background-color: rgb(255, 255, 255);
-    display: inline-block;
-    font-size: -10px;
 }
 
-.div-abertura h1{
-    position: relative;
-    margin: 0;   
-    top: -10px;
-    height: 40px;
-    font-size: 40px;
+.uso-latex {
+    height: 2000px;
+    width: 100%;
+}
+
+.conteudo {
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.conteudo h1 {
+    top: 10px;
+    font-size: 3em;
     color:  rgb(61, 122, 183);
     text-align: center;
 }
 
-#abertura-esquerda {
-    position: relative;
-    padding: 0;
-    margin: 0;
-    border-width:0;
-    width: 50%;
-    height: 400px;
-    left:0px;
-    background-image: linear-gradient(rgba(255, 255, 255, 1.2), rgba(255, 255, 255, 0.5)), url('img-index-math.jpg');
-    background-size: 100%; 
-    background-position: center;
-    background-repeat: no-repeat;
-    background-blend-mode: lighten;
-    float: left;
+.conteudo h2 {
+    top: 20px;
+    font-size: 1.8em;
+    color: rgb(61, 122, 183);
+    text-align: left;
+    font-weight: 500;
+}   
+
+.conteudo p {
+    padding-bottom: 20px;
+    padding-top: 20px;     
+    text-align: justify;
+    font-size: 1.2em;
+    color:  rgb(37, 37, 39);   
 }
 
-#abertura-direita {
-    position:relative;
-    margin: 0;
-    border-width:0;
-    width: 50%;
-    height: 400px;
-    background-image: linear-gradient(rgba(255, 255, 255, 1.2), rgba(255, 255, 255, 0.5)), url('img-index-prog.jpg');
-    background-size: 100%; 
-    background-position: center;
-    background-repeat: no-repeat;
-    float: left;
+.conteudo ul{
+    list-style-type: square;
+    padding-left: 40px;
+    padding-right: 30px;
+    color: rgb(61, 122, 183);
+    text-align: justify;
+    font-size: 1.2em;
 }
+
+.caixa-informacao {
+    box-shadow: 5px 5px 15px rgb(61, 122, 183); /*sombra lado, baixo, espalhar cor*/
+    width: 600px;
+    padding: 10px;
+    margin: auto; /*centraliza a div*/
+    border-radius: 10px; /*borda arredondada*/
+    background-color: rgb(61, 122, 183);   
+}
+
+.caixa-informacao h1{
+    color: #FCFBFC;
+    text-align: center;
+    font-family: 'Crimson Text', serif;
+    font-size: 1.8em;   
+}
+
+.caixa-informacao p {
+    font-size: 1.2em;
+    font-family: 'Crimson Text', serif;
+    color: #FCFBFC;
+    font-weight: 500;
+}
+
+.imagem-link {
+    width: 100%;
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+}
+
+.imagem-link img{
+    padding: 20px;
+}
+
+figure {
+    color: rgb(61, 122, 183);
+    font-size: 0.8em;
+  }
 
 .locais {
     margin: 0px;
@@ -261,95 +275,6 @@ a:hover {
     color:  rgb(37, 37, 39);
 }
 
-.conteudo {
-    margin: 0px;
-    bottom: 0px;
-    height: 900px;
-    width: 100%;
-    background-color: rgb(255, 255, 255);
-    color:  rgb(37, 37, 39); 
-    text-align: justify;
-    font-size: 18px;   
-}
-
-.conteudo h1 {
-    top: 10px;
-    font-size: 40pt;
-    color:  rgb(61, 122, 183);
-    text-align: center;
-}
-
-.conteudo p{
-    padding-left: 200px;
-    padding-right: 200px;
-    padding-bottom: 20px;
-    padding-top: 20px;
-}
-
-.conteudo #link{
-    font-size: 25px;
-    text-align: center;
-    color:  rgb(61, 122, 183);
-}
-.conteudo #ir-pagina{
-    font-size: 50px;
-    text-align: center;
-    color: rgb(255, 255, 255);
-    background-color: rgb(61, 122, 183);
-    height: 75px;
-    width: 350px;
-}
-
-.conteudo #ir-pagina a {
-    color: rgb(255, 255, 255);;
-}
-
-.conteudo #ir-pagina a:visited {
-    color: rgb(255, 255, 255);;
-}
-
-.conteudo #link img {
-    padding-left: 30;
-    padding-right: 30px;
-}
-
-.conteudo a:link {
-    text-decoration: none;
-}
-   
-.conteudo a:hover {
-    text-decoration: underline;
-}
-
-.conteudo #latex {
-    margin: 0px;
-    bottom: 0px;
-    height: 900px;
-    width: 100%;
-}
-
-.conteudo #html {
-    margin: 0px;
-    bottom: 0px;
-    height: 800px;
-    width: 100%;
-    background-image: linear-gradient(rgba(255, 255, 255, 1.2), rgba(255, 255, 255, 0.8)), url('img-index-html.png');
-    background-size: 100%; 
-    background-position: center;
-    background-repeat: no-repeat; 
-}
-
-.conteudo #programacao {
-    margin: 0px;
-    bottom: 0px;
-    height: 800px;
-    width: 100%;
-    background-image: linear-gradient(rgba(255, 255, 255, 1.2), rgba(255, 255, 255, 0.8)), url('img-index-programacao.png');
-    background-size: 100%; 
-    background-position: center;
-    background-repeat: no-repeat; 
-}
-
 .rodape {
     position: relative; 
     margin: 0px;
@@ -376,7 +301,7 @@ a:hover {
     padding-right: 30px;
 }
 .rodape ul{
-    list-style:none;
+    list-style: none;
     padding-left: 0px;
     padding-bottom: 10px;
     font-size: 19px;
