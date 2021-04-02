@@ -107,7 +107,7 @@ a:hover {
 }
 
 .uso-latex {
-    height: 2000px;
+    height: 2200px;
     width: 100%;
 }
 
@@ -147,6 +147,9 @@ a:hover {
     text-align: justify;
     font-size: 1.2em;
 }
+.conteudo iframe {
+    text-align: center;
+}
 
 .caixa-informacao {
     box-shadow: 5px 5px 15px rgb(61, 122, 183); /*sombra lado, baixo, espalhar cor*/
@@ -180,6 +183,10 @@ a:hover {
 
 .imagem-link img{
     padding: 20px;
+}
+
+.video {
+    text-align: center;
 }
 
 figure {
