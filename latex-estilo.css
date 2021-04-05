@@ -55,7 +55,7 @@ a:hover {
 .entre-div {
     margin: 0px;
     bottom: 0px;
-    height: 200px;
+    height: 150px;
     width: 100%;
     background-image: url('img-topo.jpg');
     background-size: 100%; 
@@ -77,14 +77,14 @@ a:hover {
 .frase {
     margin: 0px;
     bottom: 0px;
-    height: 300px;
+    height: 200px;
     width: 100%;
     background-color: #FCFBFC;
 }
 
 .frase h1{
     position: relative;    
-    top: 75px;
+    top: 50px;
     font-family: 'Caveat', cursive;
     font-size: 40px;
     font-weight: 120;
@@ -94,7 +94,7 @@ a:hover {
 
 .frase h2{
     position: relative;    
-    top: 80px;
+    top: 60px;
     font-size: 20px;
     font-weight: 80;
     text-align: center;
@@ -102,12 +102,10 @@ a:hover {
 }
 
 .historico {
-    height: 1420px;
     width: 100%;
 }
 
 .uso-latex {
-    height: 2200px;
     width: 100%;
 }
 
@@ -117,7 +115,7 @@ a:hover {
 }
 
 .conteudo h1 {
-    top: 10px;
+    padding: 20px;
     font-size: 3em;
     color:  rgb(61, 122, 183);
     text-align: center;
@@ -129,7 +127,15 @@ a:hover {
     color: rgb(61, 122, 183);
     text-align: left;
     font-weight: 500;
-}   
+}
+
+.conteudo h3 {
+    top: 20px;
+    font-size: 1.5em;
+    color: rgb(61, 122, 183);
+    text-align: left;
+    font-weight: 500;
+}
 
 .conteudo p {
     padding-bottom: 20px;
@@ -192,7 +198,16 @@ a:hover {
 figure {
     color: rgb(61, 122, 183);
     font-size: 0.8em;
-  }
+}
+
+code {
+    background-color: #eee;
+    border-radius: 3px;
+    font-family: courier, monospace;
+    color: rgb(61, 122, 183);;
+    padding: 0 3px;
+}
+
 
 .locais {
     margin: 0px;

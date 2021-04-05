@@ -1,0 +1,41 @@
+Divisões de um documento $\LaTeX$
+
+A divisão do conteúdo presente em um documento latex é realizada por meio da seguintes divisão
+seguintes estruturas:
+\part: Inicia uma parte.
+\chapter: Inicia um capítulo.
+\section: Inicia uma seção.
+\subsection: Inicia uma subseção.
+\subsubsection: Inicia uma subsubseção.
+\paragraph: Inicia um parágrafo.
+\subparagraph: Inicia um subparágrafo.
+
+Com exceção do \part, todos os outros mecanismos apresentados funcionam de maneira hierárquica. Em um documento de texto, os capítulos são repartidos em seções, estas são repartidas em subseções, e assim por diante. Dessa forma, para criar um novo capítulo, usa-se o comando \chapter{Novo Capítulo} e a criação de qualquer outra repartição desejada poderia ser feita de maneira análoga. Vale salientar que essa hierarquia pode variar de acordo com a classe utilizada para estruturar o documento. Normalmente, o capítulo ou a seção são as primeiras divisões permitidas. Nas classes book e report, a primeira divisão possível é a \part, seguida de \chapter, enquanto na classe article, a primeira divisão possível \part seguida de \section.
+
+Apresentações
+
+\ documentclass { beamer }
+\ begin { document }
+\ begin { frame }
+Hello World .
+\ end { frame }
+\ end { document }
+
+Componentes de um tema
+Na verdade um tema é composto por diversas partes: cor, tema externo, tema interno e fonte. Há vários desses temas pré-definidos no sistema, com nomes não muito sugestivos.
+
+color — albatross, beaver, beetle, crane, default, dolphin, dove, fly, lily, orchid, rose, seagull, seahorse, sidebartab, structure, whale, wolverine;
+
+outer — default, infolines, iniframes, shadow, sidebar, smoothbars, smoothtree, split, tree;
+
+inner — circles, default, inmargin, rectangles, rounded;
+
+font — default, professionalfonts, serif, structurebold, structureitalicserif, structuresmallcapsserif.
+
+Como primeiro exemplo, vamos usar a seguinte combinação:
+
+\usecolortheme{wolverine}
+\useinnertheme{circles}
+\useoutertheme{infolines}
+\usefonttheme{default}
+

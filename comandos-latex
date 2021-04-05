@@ -1,0 +1,68 @@
+Comandos em Latex
+
+~ espaço inquebrável, usado para que o compilador não separe duas palavras com com espaço entre elas em linhas diferentes, exemplo São~Paulo-SP
+
+Para produzir notas de rodapé deve-se utilizar o comando \footnote. Exemplo: aqui\footnote{isso vai para o rodapé}  
+
+Comandos de Formatação de Texto
+\emph{}: texto enfatizado
+\textbf{}: texto em negrito
+\textit{Texto}: itálico
+\textsf{}: texto em sanserif
+\textsc{}: texto em caixa alta
+\underline{}: texto sublinhado
+\texttt{Texto}: estilo máquina de escrever
+
+
+
+Comandos de Tamanho de texto
+{\tiny }
+{\scriptsize }
+{\footnotesize }
+{\small }
+{\normalsize }
+{\large }
+{\Large }
+{\LARGE } 
+{\huge }
+{\Huge }
+
+Epaçamento
+
+\hspace{tamanho} espaçamento horizontal, o tamanho pode ser negativo, funcionando como recuo, e deve vir com unidade de medida, por exemplo, cm.
+\vspace{tamanho} produz um espaçamento vertical de tamanho definido pelo usuário.
+\hfill indroduz espaços entre os textos à direita e a esquerda dele para preencher a largura da página.
+\vfill indroduz espaços entre os textos à direita e a esquerda dele para preencher a altura da página.
+\newpage inicia uma nova página.
+\noindent remove o espaçamento antes do inı́cio do parágrafo
+
+
+Pacotes Úteis
+
+Color
+\usepackage[pdftex]{color,graphicx}: alterações de cor do texto, exemplo {\color{blue} Texto}, Texto em azul.
+Cores diponíveis: red, blue, cyan, yellow, e green. Pode-se usar também:
+\textcolor{cor}{texto a ser colorido}
+
+Pode-se usar o padrão RGB e no preâmbulo do documento e criar uma nova cor: \definecolor{nome da cor}{RGB}{vermelho,verde,azul}, um exemplo seria
+
+\definecolor{rosa}{RGB}{242,180,184}
+
+\colorbox{cor}{texto} editar a cor de fundo de um trecho de texto, exemplo: \colorbox{red}{Fundo Vermelho}.
+
+Código
+inline: \verb|código|
+Código inteiro:
+\begin{verbatin}
+Código Inteiro
+\end{verbatin}
+
+Estilos de Páginas
+\pagestyle{style}: para mudar o estilo de todo o documento.
+\thispagestyle{style}: para mudar o estilo de uma única página.
+
+plain: Imprime os números de página no centro do pé da página.
+headings: No cabeçalho de cada página imprime o capítulo que está sendo processado e o número da página. O pé da página fica vazio.
+empty: Coloca tanto o cabeçalho como o pé da página vazios.
+
+
