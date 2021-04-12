@@ -204,10 +204,26 @@ code {
     background-color: #eee;
     border-radius: 3px;
     font-family: courier, monospace;
-    color: rgb(61, 122, 183);;
+    color: rgb(61, 122, 183);
     padding: 0 3px;
 }
 
+.codigo {
+    margin: auto;
+    padding: 20px; 
+    font-size: 1em; 
+    background-color: #eee;
+    width: 80%;
+}
+
+.lista-codigos ul{
+    padding-bottom: 20px; 
+    color: rgb(37, 37, 39);
+}
+
+.lista-codigos li {
+    padding-bottom: 10px;
+}
 
 .locais {
     margin: 0px;

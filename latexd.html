@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>&delta;elta - Latex, documentos de alta qualidade</title>
+    <link rel="stylesheet" href="latex-estilo.css">
+    <link rel="shortcut icon" href="./imagens/delta.svg" type="image/x-icon">
+</head>
+<body>   
+    <main>
+        
+        <span id='topo'></span>
+    
+        <div class="nome-site">
+            <h1>&delta;elta</h1>
+            <h2>$\LaTeX$</h2>
+        </div>
+
+        <div class="frase">
+            <h1>Se, a princípio, a ideia não é absurda, então não há esperança para ela.</h1>
+            <h2>Albert Einstein</h2>
+        </div>
+
+        <div class="entre-div"></div>
+
+        <div class="historico">            
+            <span id='historico'></span>          
+            <div class="conteudo">
+                <h1>Formatação de Documentos</h1>                
+                <h2>Divisão</h2>
+                
+            </div>
+        </div>
+        
+        <div class="entre-div"></div>
+
+        <div class="footer">
+            2021 &copy; Todos os direitos reservados - Leandro Vieira
+        </div>
+
+    </main>
+    <!-- Início do código Latex -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?' type='text/javascript'>   
+        MathJax.Hub.Config({
+            HTML: ["input/TeX","output/HTML-CSS"],
+            TeX: { extensions: ["AMSmath.js","AMSsymbols.js"],
+                   equationNumbers: { autoNumber: "AMS" } },
+            extensions: ["tex2jax.js"],
+            jax: ["input/TeX","output/HTML-CSS"],
+            tex2jax: { inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+                       displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+                       processEscapes: true },
+            "HTML-CSS": { availableFonts: ["TeX"],
+                          linebreaks: { automatic: true } }
+        });
+        </script>
+    <!-- Fim do código Latex --> 
+</body>
+</html>

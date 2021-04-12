@@ -65,4 +65,47 @@ plain: Imprime os números de página no centro do pé da página.
 headings: No cabeçalho de cada página imprime o capítulo que está sendo processado e o número da página. O pé da página fica vazio.
 empty: Coloca tanto o cabeçalho como o pé da página vazios.
 
+Quebra de Página
+
+\pagebreak  quebra de página
+\nopagebreak não quebra a página
+
+Comando para alterar o espaçamento do texto \hyphenation{pa-la-vra,e-xem-plo}
+
+Alinhamento
+\begin{center}
+Este texto ficará centralizado
+na página.
+\end{center}
+\begin{flushright}
+Este à direita.
+\end{flushright}
+\begin{flushleft}
+Este à esquerda.
+\end{flushleft}
+
+Imagens
+
+\begin{figure}[!htb]
+\center
+\includegraphics[width=10cm]{./imagens/nome.jpg}
+\caption{Legenda da Imagem}
+\label{label}
+\end{figure}
+
+
+Pacotes matemáticos
+\usepackage{amsmath}
+% ou
+\usepackage{mathtools}
+
+Índice Remicissivo
+\usepackage{makeidx}
+
+\makeindex % antes do inicio do documento
+Exemplo: O Esporte Corrida \index{Esportes!Corrida}
+\printindex % Ao fim do documento
+
+
+bibliograficas compilar bibtex
 

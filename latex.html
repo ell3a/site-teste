@@ -285,7 +285,8 @@
                 <p>
                     Existe uma carência de livros impressos em língua portuguesa, sobre o $\LaTeX$ e seu uso de forma avançanda. No entanto existe uma ampla variedade de bons textos em pdf, disponibilizados na rede sobre o uso básico do sistema. A seguir são listados, alguns desses textos:
                 </p>
-                <ul>
+
+                <ul style="padding-bottom: 20px;">
                     <li>
                         <a href="https://www.ime.unicamp.br/~mfirer/tex2000.pdf" target="_blank" rel="noopener noreferrer">Uma Introdução ao Latex</a>
                     </li>
@@ -310,53 +311,234 @@
                     </li>
                 </ul>
 
+                <h2>
+                    Latex Básico
+                </h2>
 
+                <p>
+                    Os documentos são compostos por um preâmbulo e um corpo. A seguir um exemplo básico de um arquivo latex:
+                </p>
+
+                <p class="codigo">
+                    <code>
+                        \documentclass[12pt,a4paper]{article}
+                        <br>
+                        \usepackage[utf8]{inputenc}
+                        <br>
+                        <br>
+                        \begin{document}
+                        <br>
+                        \section*{Isso é um Título}
+                        <br>        
+                        O que ficar entre esses dois comando é o que será impresso.
+                        <br>
+                        \end{document}
+                    </code>
+                </p>
+
+                <p>
+                    O corpo é a parte do texto que será impressa, convertida para o formato final do documento. Nos documentos Latex o corpo está compreendido entre os comandos <code>\begin{document}</code> e <code>\end{document}</code>. Os comandos <code>\documentclass[12pt,a4paper]{article}</code> e <code>\usepackage[utf8]{inputenc}</code> fazem parte do preâmbulo do documento. O preâmbulo traz todos os comando que definem a formatação do arquivo, como espaçamento, margens, fonte, etc. A seguir uma lista comentando os comando mostrados anteriormente.
+                </p>
+
+                <div class="lista-codigos">
+                    <ul>
+                        <li>
+                            <code>\documentclass[12pt,a4paper]{article}</code>: Esse comando deve ir no preâmbulo de todo arquivo latex, entre colchetes há opções <code>12pt</code>: tamanho da fonte do documento, e <code>a4paper</code>: tamanho das páginas. Entre chaves temos a opção <code>article</code>, que informa o tipo de documento. Existem outras opções para o comando <code>documentclass</code>, mas à frente falaremos delas.
+                        </li>
+                        <li>
+                            <code>\usepackage[utf8]{inputenc}</code>: esse é o comando para imprimir sinais de acentuação, ç, etc.. Como o Latex não foi feito nativamente para o português, é necessário inserir esse comando, caso contrário ao digitar no corpo, por exemplo, 'não faça', o resultado da impressão será: 'no faa'.
+                        </li>
+                    </ul>
+                </div>
+                
+                <h3>
+                    O comando <code>\documentclass</code>
+                </h3>
+                <p>
+                    O comando tem a forma <code>\documentclass[opções][classe]</code>. As opções podem ser:
+                </p>
+
+                <div class="lista-codigos">
+                    <ul>
+                        <li>
+                            <strong style="color: rgb(61, 122, 183);">Tamanho da fonte:</strong> 10pt, 11pt, 12pt (caso seja necessário aumentar a fonte em trechos específicos além do 12pt, ou com com valores inferiores a 10pt, tem comandos específicos, veremos mais adiante);
+                        </li>
+                        <li>
+                            <strong style="color: rgb(61, 122, 183);">Número de colunas:</strong> onecolumn, twocolumn (pode ser alterado, colocando apenas trechos do texto em duas colunas, ou em mais colunas)
+                        </li>
+                        <li>
+                            <strong style="color: rgb(61, 122, 183);">Formato do papel:</strong> a4paper, a5paper, letterpaper, legalpaper, executivepaper, dentre outros.
+                        </li>
+                        <li>
+                            <strong style="color: rgb(61, 122, 183);">Orientação do documento:</strong> alterar a orientação da página do documento da vertical para horizontal usando a opção landscape.
+                        </li>
+                        <li>
+                            <strong style="color: rgb(61, 122, 183);">Impressão:</strong> define a impressão do documento se é em um lado da folha com oneside, ou nos dois lados com twoside.
+                        </li>
+                        <li>
+                            <strong style="color: rgb(61, 122, 183);">Equações:</strong> equações apresentadas no documento alinhadas à esquerda com fleqn, em vez do centro e numeração das equações também à esquerda com leqno ao invés da direita.
+                        </li>
+                    </ul>
+                </div>
+                
+                <p>
+                    Na opção classe do comando <code>\documentclass</code> usamos <code>article</code>, na postagem encaminha pelo link a seguir são apresentadas as diversas classes dos documentos latex:
+                </p>                        
+
+                <h3 style="text-align: center;">
+                    <a href="https://aprendolatex.wordpress.com/2007/07/15/mais-classes-de-documentos/" target="_blank">Várias classes de documento em Latex</a>
+                </h3>
+
+                <p>                 
+                    Cada classe de documento tem suas configurações de formatação predefinidas, as mais usadas são: <code>article</code>, para artigos; <code>report</code>, para trabalhos como TCC's, e disertações; <code>book</code>, para livros e <code>bearmer</code> para criação de slides. Voltaremos a estudar a classe <code>bearmer</code> com mais detalhes. A seguir mais links sobre o comando <code>\documentclass</code>:
+                </p>
+                <ul style="padding-bottom: 20px;">
+                    <li>
+                        Mais opções do documentclass: <a href="https://aprendolatex.wordpress.com/2007/03/13/as-classes-e-as-opcoes-de-documentclass/" target="_blank" rel="noopener noreferrer">As classes e as opções do <code>\documentclass</code>.</a>
+                    </li>
+                    <li>
+                        Tamanhos de fontes maiores em todo o documento: <a href="https://aprendolatex.wordpress.com/2009/01/25/mais-tamanhos-de-fontes-disponiveis/" target="_blank" rel="noopener noreferrer"> Mais tamanhos de fontes disponíveis.</a>
+                    </li>
+                </ul>
+                <p>
+                    Além das opções listadas existem titlepage, notitlepage, que informa se uma nova página deve ou não iniciar após o título do documento, e openright, openany, muita usadas em livros, que indicam se um novo capítulo deve se iniciar em qualquer página, ou se apenas em páginas da direita, de numeração ímpar. A seguir um exemplo de documento latex, com mais comandos no preâmbulo:
+                </p>
+                <p class="codigo">
+                    <code>
+                        \documentclass[12pt,a4paper,twocolumn]{article}
+                        <br>
+                        % Para caracteres especiais
+                        <br>
+                        \usepackage[T1]{fontenc}
+                        <br>
+                        % Partes do documento em português: sumário, data, capítulos
+                        <br>
+                        \usepackage[portuguese]{babel}
+                        <br>
+                        <br>
+                        % Isso é um cometário é ignorado pelo latex
+                        <br>
+                        <br>
+                        % Comando para inserir dá um título ao documento
+                        <br>
+                        \title{Título do Artigo}
+                        <br>
+                        <br>
+                        % Comando para associar um autor ao trabalho
+                        <br>
+                        \author{Nome do Autor}
+                        <br>
+                        <br>
+                        \begin{document}
+                        <br>
+                        <br>
+                        % Insere o título e o autor do documento
+                        <br>
+                        \maketitle
+                        <br>
+                        <br>
+                        % Insere um sumário
+                        <br>
+                        \tableofcontents
+                        <br>
+                        <br>
+                        \section{Isso é um Título}
+                        <br>
+                        Nosso artigo está em duas colunas
+                        <br>
+                        <br>
+                        \subsection{Uma subseção}
+                        <br>
+                        <br>
+                        % Isso é um cometário e será ignorado pelo latex.
+                        <br>
+                        Bem aqui
+                        <br>
+                        <br>
+                        \section{Outra seção}
+                        <br>
+                        e Por aí vai
+                        <br>
+                        \end{document}
+                    </code>
+                </p>
             </div>
         </div>
-
-        <div class="entre-div"></div>
-    
-        <div class="locais">
-            
-            <h1>Repositórios de Arquivos $\LaTeX$</h1>            
-            <div id="esquerda-locais">
-                <h2>Links Externos</h2>
-                <ul>
-                    <li>UM</li>
-                    <li>DOIS</li>
-                    <li>TRÊS</li>
-                </ul>   
-            
-            </div>
-            
-            <div id="centro-locais">
-                
-                <h2>Modelos</h2>
-                <ul>
-                    <li>UM</li>
-                    <li>DOIS</li>
-                    <li>TRÊS</li>
-                </ul>
-                    
-            </div>
-
-            <div id="direita-locais">
-                
-                <h2>Listas de exercícios e textos</h2>
-                <ul>
-                    <li>UM</li>
-                    <li>DOIS</li>
-                    <li>TRÊS</li>
-                </ul>
-            </div>
-            
-        </div>
+        
+        <br>
+        <br>    
           
         <div class="entre-div"></div>
 
         <div class="frase">
             <h1> Se o conhecimento pode criar problemas, não é através <br> da ignorância que podemos solucioná-los. </h1>
             <h2>Isaac Asimov</h2>
+        </div>
+
+        <div class="entre-div"></div>
+
+        <div class="manual-latex">
+            <div class="conteudo">
+
+                <h1>Preâmbulo de um Documento $\LaTeX$</h1>
+
+                <p>
+                    No preâmbulo do documento latex a seguir, podemos notar o uso comum do comando <code>\usepackage</code>. Esse comando tem a forma <code>\usepackage[opções]{pacotes}</code>, cada pacote informa ao compilador alguma configuração específica do texto a ser impresso.
+                </p>
+
+                <p class="codigo">
+                    <code>
+                        \documentclass[12pt,a4paper]{article}
+                        <br>
+                        \usepackage[utf8]{inputenc}
+                        <br>
+                        \usepackage[T1]{fontenc}
+                        <br>
+                        \usepackage[portuguese]{babel}
+                        <br>
+                        <br>
+                        \begin{document}
+                        <br>
+                        \section*{Isso é um Título}
+                        <br>        
+                        O que ficar entre esses dois comando é o que será impresso.
+                        <br>
+                        \end{document}
+                    </code>
+                </p>
+                <p>
+                    Além do pacote mostrados no código anterior, há muitos outros. A seguir uma lista com alguns deles:
+                </p>
+
+                <div class="lista-codigos">
+                    <ul>
+                        <li>
+                            <code>geometry</code>: pacote para configurar as dimensões das margens das páginas do documento. Deve ser usado com opçoes, um exemplo de seu uso seria <code>\usepackage[lmargin=3cm,rmargin=2cm,tmargin=3cm, bmargin=2cm]{geometry}</code>, onde teremos um documento de margem direita, esquerda, topo e inferior medindo respectivamente 3 cm, 2 cm, 3 cm e 2 cm.
+                        </li>
+                        <li>
+                            <code>amssymb</code> e <code>amsmath</code>: pacotes que habilitam alguns caracteres e comandos matemáticos especiais.
+                        </li>
+                        <li>
+                            <code>hyperref</code>: para utilizar links internos e externos no documento. Como opções é possivel especificar a cor de cada tipo de link, entre outras.
+                        </li>
+                        <li>
+                            <code>hypcap</code>: usado em conjunto com o  <code>hyperref</code>, posibilita que link interno leve para o inı́cio de uma figura ou tabela. A opção <code>all</code> habilite o pacote para figuras e tabelas, numeradas ou não.
+                        </li>
+                        <li>
+                            <code>graphicx</code>: para inserir figuras em png. Como opção passamos <code>pdftex</code> para especificar que estamos produzindo um documento em pdf.
+                        </li>
+                        <li>
+                            <code>fancyhdr</code>: para personalizar o cabeçalho e rodapé.
+                        </li>
+                        <li>
+                            <code>abntex</code>: pacote para escrever nas normas da abnt.
+                        </li>
+                        <li>
+                            <code>indentfirst</code>: adiciona identação do primeiro parágrafo de cada capítulo, seção ou subseção.
+                        </li>
+                    </ul>
+                </div>         
+            </div>
         </div>
 
         <div class="entre-div"></div>
